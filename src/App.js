@@ -11,7 +11,7 @@ import "./app.styles.scss";
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
       <Header />
       <Routes>
         <Route path="/*" element={<Error />} />

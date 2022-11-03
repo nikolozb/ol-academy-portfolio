@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 100px;
+  margin: auto;
+}
+
+body {
+  background-color: black;
+}
+
+.circle {
+  border: 25px solid yellow;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background-color: none;
+
+  box-shadow: 1px 1px 40px yellow;
+
+  opacity: 0.7;
+}
+
+.nav {
+  &__link {
+    text-decoration: none;
+    filter: invert(1);
+    font-size: 28px;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      margin-right: 100px;
+    }
+  }
+}
+
+.home {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
