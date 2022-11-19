@@ -1,21 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+const navLinks = [
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+  { name: "Contacts", path: "/contacts" },
+  { name: "Projects", path: "/projects" },
+];
+
 const Header = () => {
   return (
     <nav className="nav">
-      <Link to="/" className="nav__link">
-        Home
-      </Link>
-      <Link to="/about" className="nav__link">
-        About
-      </Link>
-      <Link to="/contacts" className="nav__link">
-        Contacts
-      </Link>
-      <Link to="/projects" className="nav__link">
-        Projects
-      </Link>
+      {navLinks.map(({ name, path }, idx) => (
+        <Link to={path} className="nav__link" key={idx}>
+          {name}
+        </Link>
+      ))}
     </nav>
   );
 };

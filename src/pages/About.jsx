@@ -40,7 +40,10 @@ const About = () => {
         Certifications: ReactJS Certification
       </div>
       <div className="about__skills">
-        My skills:{skills.map((skill) => skill)}
+        My skills:
+        {skills.map((skill, idx) => (
+          <span key={idx}>{skill}</span>
+        ))}
       </div>
     </div>
   );
