@@ -26,7 +26,13 @@ const Contacts = () => {
       </span>
       {links.map(({ href, icon, name }, index) => {
         return (
-          <a key={index} target="_blank" className="contacts__link" href={href}>
+          <a
+            key={index}
+            target="_blank"
+            className="contacts__link"
+            href={href}
+            rel="noreferrer"
+          >
             {icon}
             {name}
           </a>

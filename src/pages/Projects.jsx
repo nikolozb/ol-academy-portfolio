@@ -32,6 +32,13 @@ const cards = [
       "Todo app, it has add, edit, update, delete buttons and many other features.",
     link: "https://github.com/nikolozb/todo-app",
   },
+  {
+    image: "https://i.ibb.co/6mn30zd/Screenshot-from-2022-11-24-11-53-25.png",
+    title: "Resume generator",
+    description:
+      "Create resume easily with two themes, 8 colors and more features.",
+    link: "https://github.com/nikolozb/ol-academy-resume-generator",
+  },
 ];
 
 const Projects = () => {
